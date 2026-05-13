@@ -7,6 +7,7 @@ import { Second } from './second/second';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MyDirective } from './my-directive';
+<<<<<<< HEAD
 import { Widok1 } from './widok1/widok1';
 import { Widok2 } from './widok2/widok2';
 import { Widok3 } from './widok3/widok3';
@@ -29,6 +30,12 @@ registerLocaleData(localePl, 'pl');
     AppMenu,
     Menu,
   ],
+=======
+import { Menu } from './menu/menu';
+
+@NgModule({
+  declarations: [App, Second, MyDirective, Menu],
+>>>>>>> aa1a741e6403deee925e2335cd8867f5ef1f992d
   imports: [BrowserModule, CommonModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), {provide: 'LOCALE_ID', useValue: 'pl-PL'}],
   bootstrap: [App],

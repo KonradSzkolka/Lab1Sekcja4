@@ -1,4 +1,5 @@
 <table>
+<<<<<<< HEAD
     <thread>    
         <tr>    
             <th>Id</th>
@@ -11,12 +12,35 @@
     </thread>
     <tbody>
         <tr *ngFor="let p of data; trackBy: trackByI">
+=======
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Data urodzenia</th>
+            <th>Wiek</th>
+            <th>Przejdź</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of data; trackBy: trackByID">
+>>>>>>> aa1a741e6403deee925e2335cd8867f5ef1f992d
             <td>{{p.id}}</td>
             <td>{{p.name}}</td>
             <td>{{p.surname}}</td>
             <td>{{p.dateOfBirth | date:'fullDate'}}</td>
+<<<<<<< HEAD
             <td>{{p | age}}</td>
             <td><a [routerLink]=" p.id + '' "Przejdź</a></td>
         </tr>
     </tbody>
 <table>
+=======
+            <!-- <td>{{calculateAge(p)}}</td> -->
+            <td>{{p | age}}</td>
+            <td><a [routerLink]="p.id + ''">Przejdź</a></td>
+        </tr>
+    </tbody>
+</table>
+>>>>>>> aa1a741e6403deee925e2335cd8867f5ef1f992d

@@ -1,5 +1,10 @@
 <h1 appMyDirective>{{title + '...'}}!</h1>
-<p appMyDirective="blue">Wartość globalnego licznika to: {{licznikGlobalny}}</p>
+
+<app-menu></app-menu>
+
+<router-outlet></router-outlet>
+
+<!-- <p appMyDirective="blue">Wartość globalnego licznika to: {{licznikGlobalny}}</p>
 <p appMyDirective="yellow">Treść pod dyrektywę</p>
 
 <div>
@@ -13,7 +18,7 @@
   </button>
 </div>
 
-<!-- <app-second *ngFor="let item of tablica" [nazwa]="item" (zmianaLicznika)="onZmianaLicznika()" (usunKomponent)="onUsunKomponent($event)" [uprawnienieDoUsuwania]="czyMoznaUsuwac"></app-second> -->
+<app-second *ngFor="let item of tablica" [nazwa]="item" (zmianaLicznika)="onZmianaLicznika()" (usunKomponent)="onUsunKomponent($event)" [uprawnienieDoUsuwania]="czyMoznaUsuwac"></app-second>
 
 @for(item of tablica; track item) {
   <app-second [nazwa]="item" (zmianaLicznika)="onZmianaLicznika()" (usunKomponent)="onUsunKomponent($event)" [uprawnienieDoUsuwania]="czyMoznaUsuwac"></app-second>
@@ -21,7 +26,7 @@
   <div>
     Brak elementów w tablicy
   </div>
-}
+} -->
 
 <!-- <app-second nazwa="Pierwszy" (zmianaLicznika)="onZmianaLicznika()"></app-second>
 <app-second nazwa="Drugi" (zmianaLicznika)="onZmianaLicznika()"></app-second>
